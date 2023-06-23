@@ -1,0 +1,26 @@
+name: ape-fantom-bug-test
+plugins:
+  - name: etherscan
+  - name: fantom
+  - name: foundry
+  - name: vyper
+test:
+  disconnect_providers_after: false
+  number_of_accounts: 5
+default_ecosystem: fantom
+fantom:
+  default_network: opera-fork
+  opera:
+    default_provider: geth
+  opera_fork:
+    default_provider: foundry
+geth:
+  fantom:
+    opera:
+      uri: https://rpc.ankr.com/fantom
+foundry:
+  port: 8545
+  fork:
+    fantom:
+      opera:
+        upstream_provider: geth

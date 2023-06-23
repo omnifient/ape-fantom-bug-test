@@ -1,0 +1,19 @@
+# VSCODE
+.vscode/
+
+# Ape stuff
+.build/
+.cache/
+
+# Python
+.env
+.venv
+pyvenv.cfg
+.pytest_cache
+__pycache__
+bin/
+include/
+lib/
+lib64
+share/
+.hypothesis/
